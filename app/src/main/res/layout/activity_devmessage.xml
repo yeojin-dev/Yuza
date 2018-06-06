@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <!--  <LinearLayout
+        android:id="@+id/settingLayout1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="세팅 메뉴"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/settingText1"
+            android:layout_weight="4"
+            android:textSize="18sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="?android:attr/colorForeground"
+            android:textAlignment="center" />
+
+        <ToggleButton
+            android:text="ToggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/settingToggleBtn1"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:layout_marginRight="16dp"
+            android:background="@color/cardview_light_background"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+    -->
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/message1"
+      android:text="아아아아아아"
+      android:layout_alignParentStart="true"
+      android:layout_margin="40dp" />
+
+  <ImageView
+      app:srcCompat="@drawable/stamp"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentEnd="true"
+      android:id="@+id/devStamp"
+      android:layout_height="150dp"
+      android:layout_width="150dp"
+      android:layout_marginRight="20dp" />
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@android:color/background_light">
+
+	<RelativeLayout
+		android:id="@+id/contentView"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:background="@android:color/white">
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentStart="true"
+		android:layout_marginBottom="8dp"
+		android:layout_height="50dp"
+		android:layout_marginTop="8dp">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1">
+
+			<TextView
+                android:text="속도(KM/h)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/speedMsg"
+                android:layout_weight="1"
+				android:layout_marginLeft="16dp"
+				android:visibility="gone" />
+
+			<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/speedTextView"
+                android:layout_weight="1"
+				android:visibility="gone"
+				android:layout_marginLeft="16dp"
+				android:layout_marginTop="0dp"
+				android:textSize="24sp"
+				android:textStyle="bold"
+				android:textColor="@color/colorPrimary" />
+
+			<ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/herebtn"
+                android:id="@+id/hereImageView"
+                android:layout_weight="1" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1">
+
+			<TextView
+				android:text="거리(M)"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/distanceMsg"
+				android:layout_weight="1"
+				android:layout_marginLeft="16dp"
+				android:visibility="gone" />
+
+			<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/distanceTextView"
+                android:layout_weight="1"
+				android:visibility="gone"
+				android:layout_marginLeft="16dp"
+				android:layout_marginTop="0dp"
+				android:textSize="24sp"
+				android:textStyle="bold"
+				android:textColor="@color/colorPrimaryDark" />
+
+			<ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/searchbtn"
+                android:id="@+id/searchImageView"
+                android:layout_weight="1"
+                android:adjustViewBounds="false" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1">
+
+			<ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/archivebtn"
+                android:id="@+id/achievementImageView"
+                android:layout_weight="1" />
+
+		</LinearLayout>
+
+		<LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+			<ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/settingbtn"
+                android:id="@+id/settingImageView"
+                android:layout_weight="1" />
+		</LinearLayout>
+	</LinearLayout>
+
+
+</LinearLayout>

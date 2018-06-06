@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/archiveImageIcon"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_launcher"
+        android:scaleType="fitCenter"
+        android:layout_width="50dp"
+        android:adjustViewBounds="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            app:srcCompat="@drawable/stamp_transparent"
+            android:id="@+id/archiveStamp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/archiveDistance"
+            android:layout_marginTop="6dp"
+            android:alpha="30" />
+
+        <TextView
+            android:id="@+id/archiveName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:id="@+id/archiveDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:layout_below="@+id/archiveName"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/archiveDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:layout_below="@+id/archiveDistance"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/archiveTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:layout_weight="1"
+            android:layout_alignBaseline="@+id/archiveDate"
+            android:layout_alignBottom="@+id/archiveDate"
+            android:layout_toEndOf="@+id/archiveDate"
+            android:layout_marginLeft="4dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff">
+
+  <!--  <LinearLayout
+        android:id="@+id/settingLayout1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="세팅 메뉴"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/settingText1"
+            android:layout_weight="4"
+            android:textSize="18sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="?android:attr/colorForeground"
+            android:textAlignment="center" />
+
+        <ToggleButton
+            android:text="ToggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/settingToggleBtn1"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:layout_marginRight="16dp"
+            android:background="@color/cardview_light_background"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+    -->
+
+  <TextView
+      android:text="서울도 좋고,\n자전거도 좋고,\n\n좋다는게 별거 있나요? ^^"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/textView4"
+      android:textColor="#000000"
+      android:layout_alignParentTop="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="20dp"
+      android:textSize="18sp" />
+
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:srcCompat="@drawable/background_seoul"
+      android:id="@+id/imageView3"
+      android:scaleType="fitEnd"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentStart="true" />
+
+  <Button
+        android:text="네이버\n카페"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/settingBtn2"
+      android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="16sp"
+        android:background="@drawable/settingbtn_orange"
+      android:textColor="#ffffff"
+      android:layout_marginStart="44dp"
+      android:layout_centerVertical="true"
+      android:layout_alignParentStart="true" />
+
+  <Button
+        android:text="개발자\n한마디"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/settingBtn3"
+      android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="16sp"
+        android:background="@drawable/settingbtn_blue"
+      android:textColor="#ffffff"
+      android:layout_marginEnd="46dp"
+      android:layout_alignTop="@+id/settingBtn2"
+      android:layout_alignParentEnd="true"
+      android:layout_marginTop="77dp" />
+
+  <Button
+      android:text="기록\n초기화"
+      android:id="@+id/settingBtn1"
+      android:layout_marginLeft="16dp"
+      android:layout_marginRight="16dp"
+      android:textSize="16sp"
+      android:background="@drawable/settingbtn_yellow"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:textColor="#ffffff"
+      android:layout_marginTop="26dp"
+      android:layout_below="@+id/textView4"
+      android:layout_toEndOf="@+id/settingBtn2" />
+
+</RelativeLayout>
